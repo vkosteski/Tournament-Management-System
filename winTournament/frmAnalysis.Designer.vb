@@ -28,17 +28,17 @@ Partial Class frmAnalysis
         Me.cboIndEveResults = New System.Windows.Forms.ComboBox()
         Me.btnFinish = New System.Windows.Forms.Button()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.btnSortTeamRes = New System.Windows.Forms.Button()
+        Me.lstTeamRes = New System.Windows.Forms.ListBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.btnSortIndRes = New System.Windows.Forms.Button()
+        Me.lstIndRes = New System.Windows.Forms.ListBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.cboTeamEveRes = New System.Windows.Forms.ComboBox()
+        Me.btnSortTeamEveRes = New System.Windows.Forms.Button()
+        Me.lstTeamEveRes = New System.Windows.Forms.ListBox()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.lstTeamEveRes = New System.Windows.Forms.ListBox()
-        Me.btnSortTeamEveRes = New System.Windows.Forms.Button()
-        Me.lstIndRes = New System.Windows.Forms.ListBox()
-        Me.btnSortIndRes = New System.Windows.Forms.Button()
-        Me.cboTeamEveRes = New System.Windows.Forms.ComboBox()
-        Me.lstTeamRes = New System.Windows.Forms.ListBox()
-        Me.btnSortTeamRes = New System.Windows.Forms.Button()
         Me.TabPage4.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -67,6 +67,7 @@ Partial Class frmAnalysis
         '
         'cboIndEveResults
         '
+        Me.cboIndEveResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cboIndEveResults.FormattingEnabled = True
         Me.cboIndEveResults.Location = New System.Drawing.Point(240, 32)
         Me.cboIndEveResults.Name = "cboIndEveResults"
@@ -95,6 +96,25 @@ Partial Class frmAnalysis
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Overall Team Results"
         '
+        'btnSortTeamRes
+        '
+        Me.btnSortTeamRes.Location = New System.Drawing.Point(149, 551)
+        Me.btnSortTeamRes.Name = "btnSortTeamRes"
+        Me.btnSortTeamRes.Size = New System.Drawing.Size(218, 44)
+        Me.btnSortTeamRes.TabIndex = 10
+        Me.btnSortTeamRes.Text = "Sort"
+        Me.btnSortTeamRes.UseVisualStyleBackColor = True
+        '
+        'lstTeamRes
+        '
+        Me.lstTeamRes.BackColor = System.Drawing.Color.White
+        Me.lstTeamRes.FormattingEnabled = True
+        Me.lstTeamRes.ItemHeight = 15
+        Me.lstTeamRes.Location = New System.Drawing.Point(149, 91)
+        Me.lstTeamRes.Name = "lstTeamRes"
+        Me.lstTeamRes.Size = New System.Drawing.Size(218, 454)
+        Me.lstTeamRes.TabIndex = 8
+        '
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -107,6 +127,25 @@ Partial Class frmAnalysis
         Me.TabPage3.Size = New System.Drawing.Size(601, 601)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Overall Individual Results"
+        '
+        'btnSortIndRes
+        '
+        Me.btnSortIndRes.Location = New System.Drawing.Point(144, 550)
+        Me.btnSortIndRes.Name = "btnSortIndRes"
+        Me.btnSortIndRes.Size = New System.Drawing.Size(218, 44)
+        Me.btnSortIndRes.TabIndex = 9
+        Me.btnSortIndRes.Text = "Sort"
+        Me.btnSortIndRes.UseVisualStyleBackColor = True
+        '
+        'lstIndRes
+        '
+        Me.lstIndRes.BackColor = System.Drawing.Color.White
+        Me.lstIndRes.FormattingEnabled = True
+        Me.lstIndRes.ItemHeight = 15
+        Me.lstIndRes.Location = New System.Drawing.Point(144, 90)
+        Me.lstIndRes.Name = "lstIndRes"
+        Me.lstIndRes.Size = New System.Drawing.Size(218, 454)
+        Me.lstIndRes.TabIndex = 7
         '
         'TabPage2
         '
@@ -122,9 +161,38 @@ Partial Class frmAnalysis
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Team Results by Event"
         '
+        'cboTeamEveRes
+        '
+        Me.cboTeamEveRes.FormattingEnabled = True
+        Me.cboTeamEveRes.Location = New System.Drawing.Point(241, 37)
+        Me.cboTeamEveRes.Name = "cboTeamEveRes"
+        Me.cboTeamEveRes.Size = New System.Drawing.Size(121, 23)
+        Me.cboTeamEveRes.TabIndex = 9
+        '
+        'btnSortTeamEveRes
+        '
+        Me.btnSortTeamEveRes.Location = New System.Drawing.Point(144, 551)
+        Me.btnSortTeamEveRes.Name = "btnSortTeamEveRes"
+        Me.btnSortTeamEveRes.Size = New System.Drawing.Size(218, 44)
+        Me.btnSortTeamEveRes.TabIndex = 8
+        Me.btnSortTeamEveRes.Text = "Sort"
+        Me.btnSortTeamEveRes.UseVisualStyleBackColor = True
+        '
+        'lstTeamEveRes
+        '
+        Me.lstTeamEveRes.BackColor = System.Drawing.Color.White
+        Me.lstTeamEveRes.FormattingEnabled = True
+        Me.lstTeamEveRes.ItemHeight = 15
+        Me.lstTeamEveRes.Location = New System.Drawing.Point(144, 91)
+        Me.lstTeamEveRes.Name = "lstTeamEveRes"
+        Me.lstTeamEveRes.Size = New System.Drawing.Size(218, 454)
+        Me.lstTeamEveRes.TabIndex = 6
+        '
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.TabPage1.BackgroundImage = Global.winTournament.My.Resources.Resources.background3
+        Me.TabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TabPage1.Controls.Add(Me.lstIndEveResults)
         Me.TabPage1.Controls.Add(Me.cboIndEveResults)
         Me.TabPage1.Controls.Add(Me.btnSortIndEveRes)
@@ -148,75 +216,12 @@ Partial Class frmAnalysis
         Me.TabControl1.Size = New System.Drawing.Size(609, 627)
         Me.TabControl1.TabIndex = 10
         '
-        'lstTeamEveRes
-        '
-        Me.lstTeamEveRes.BackColor = System.Drawing.Color.White
-        Me.lstTeamEveRes.FormattingEnabled = True
-        Me.lstTeamEveRes.ItemHeight = 15
-        Me.lstTeamEveRes.Location = New System.Drawing.Point(144, 91)
-        Me.lstTeamEveRes.Name = "lstTeamEveRes"
-        Me.lstTeamEveRes.Size = New System.Drawing.Size(218, 454)
-        Me.lstTeamEveRes.TabIndex = 6
-        '
-        'btnSortTeamEveRes
-        '
-        Me.btnSortTeamEveRes.Location = New System.Drawing.Point(144, 551)
-        Me.btnSortTeamEveRes.Name = "btnSortTeamEveRes"
-        Me.btnSortTeamEveRes.Size = New System.Drawing.Size(218, 44)
-        Me.btnSortTeamEveRes.TabIndex = 8
-        Me.btnSortTeamEveRes.Text = "Sort"
-        Me.btnSortTeamEveRes.UseVisualStyleBackColor = True
-        '
-        'lstIndRes
-        '
-        Me.lstIndRes.BackColor = System.Drawing.Color.White
-        Me.lstIndRes.FormattingEnabled = True
-        Me.lstIndRes.ItemHeight = 15
-        Me.lstIndRes.Location = New System.Drawing.Point(144, 90)
-        Me.lstIndRes.Name = "lstIndRes"
-        Me.lstIndRes.Size = New System.Drawing.Size(218, 454)
-        Me.lstIndRes.TabIndex = 7
-        '
-        'btnSortIndRes
-        '
-        Me.btnSortIndRes.Location = New System.Drawing.Point(144, 550)
-        Me.btnSortIndRes.Name = "btnSortIndRes"
-        Me.btnSortIndRes.Size = New System.Drawing.Size(218, 44)
-        Me.btnSortIndRes.TabIndex = 9
-        Me.btnSortIndRes.Text = "Sort"
-        Me.btnSortIndRes.UseVisualStyleBackColor = True
-        '
-        'cboTeamEveRes
-        '
-        Me.cboTeamEveRes.FormattingEnabled = True
-        Me.cboTeamEveRes.Location = New System.Drawing.Point(241, 37)
-        Me.cboTeamEveRes.Name = "cboTeamEveRes"
-        Me.cboTeamEveRes.Size = New System.Drawing.Size(121, 23)
-        Me.cboTeamEveRes.TabIndex = 9
-        '
-        'lstTeamRes
-        '
-        Me.lstTeamRes.BackColor = System.Drawing.Color.White
-        Me.lstTeamRes.FormattingEnabled = True
-        Me.lstTeamRes.ItemHeight = 15
-        Me.lstTeamRes.Location = New System.Drawing.Point(149, 91)
-        Me.lstTeamRes.Name = "lstTeamRes"
-        Me.lstTeamRes.Size = New System.Drawing.Size(218, 454)
-        Me.lstTeamRes.TabIndex = 8
-        '
-        'btnSortTeamRes
-        '
-        Me.btnSortTeamRes.Location = New System.Drawing.Point(149, 551)
-        Me.btnSortTeamRes.Name = "btnSortTeamRes"
-        Me.btnSortTeamRes.Size = New System.Drawing.Size(218, 44)
-        Me.btnSortTeamRes.TabIndex = 10
-        Me.btnSortTeamRes.Text = "Sort"
-        Me.btnSortTeamRes.UseVisualStyleBackColor = True
-        '
         'frmAnalysis
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.winTournament.My.Resources.Resources.background2
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(745, 656)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.btnFinish)

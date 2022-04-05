@@ -424,6 +424,9 @@ Partial Class frmRankings
         'lblEnterRankings
         '
         resources.ApplyResources(Me.lblEnterRankings, "lblEnterRankings")
+        Me.lblEnterRankings.BackColor = System.Drawing.Color.Azure
+        Me.lblEnterRankings.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.lblEnterRankings.ForeColor = System.Drawing.Color.Black
         Me.lblEnterRankings.Name = "lblEnterRankings"
         '
         'btnFinish
