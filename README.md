@@ -1,10 +1,12 @@
 # Tournaments Management System  
-![tournament](https://github.com/user-attachments/assets/313740f5-f202-4c15-a074-f2623be509db)
+![Capture](https://github.com/user-attachments/assets/39a70e67-7b50-462e-a715-8f5157a04da5)
+
 
 ## 📌 About the Project                                                                              
 This is a desktop application for managing college tournaments, developed for the BTEC Level 3 IT - Unit 4 Programming Assignment (2022). It supports both individual and team-based events, automates scoring and rankings, and provides real-time performance tracking.  
 
-![Stuvia-1927410-unit-4-programming-assignment-2distinction pdf-image-023](https://github.com/user-attachments/assets/34fc9ea4-6316-4eb6-ac9c-cb102ab2d81e)
+![flowchart](https://github.com/user-attachments/assets/b8b62835-a3cd-4e9c-b734-1410caa07717)
+
 
 
 
